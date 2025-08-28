@@ -54,13 +54,13 @@ function Navbar() {
         </li>
         <div className="flex flex-col md:flex-row gap-3 text-sm font-medium">
           <Link
-            href="/registration"
+            href="/signUp"
             className="w-[100px] text-center bg-transparent border border-green-700 py-2 px-6 rounded-md hover:bg-green-700 hover:text-white cursor-pointer"
           >
             Daftar
           </Link>
           <Link
-            href="/login"
+            href="/SignIn"
             className="w-[100px] text-center bg-green-700 py-2 px-6 rounded-md hover:bg-transparent hover:text-black text-white cursor-pointer"
           >
             Masuk

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 
-export default function Registration() {
+export default function signUp() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,7 +55,7 @@ export default function Registration() {
     setMessage("");
 
     try {
-      const res = await fetch("/api/register", {
+      const res = await fetch("/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
