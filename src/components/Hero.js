@@ -4,7 +4,7 @@ function Hero() {
       <div className="box-hero flex flex-col gap-5 md:gap-8 text-white">
         <div className="title text-center mb-5 lg:mb-0 lg:text-start md:text-3xl font-bold">Wujudkan Rumah Impianmu di GriyaGo!</div>
         <div className="sub-title text-sm md:text-2xl"><span className="font-bold">GriyaGo</span> hadir untuk temukan rumah terbaik untukmu, untuk di jual ataupun di sewa dengan sumber yang terpercaya</div>
-        <button className="flex justify-center items-center px-2 gap-2 bg-white w-[180px] rounded-md">
+        <button className="flex justify-center items-center px-2 gap-2 bg-white w-[180px] rounded-md cursor-pointer hover:bg-gray-200">
             <div className="text-green-700 font-medium text-sm">Temukan Rumah</div>
             <img src="/assets/arrow-right.svg" alt="" />
         </button>
