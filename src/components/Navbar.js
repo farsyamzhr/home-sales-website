@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -52,12 +53,18 @@ function Navbar() {
           </a>
         </li>
         <div className="flex flex-col md:flex-row gap-3 text-sm font-medium">
-          <button className="w-[100px] bg-transparent border border-green-700 py-2 px-6 rounded-md hover:bg-green-700 hover:text-white cursor-pointer">
+          <Link
+            href="/registration"
+            className="w-[100px] text-center bg-transparent border border-green-700 py-2 px-6 rounded-md hover:bg-green-700 hover:text-white cursor-pointer"
+          >
             Daftar
-          </button>
-          <button className="w-[100px] bg-green-700 py-2 px-6 rounded-md hover:bg-transparent hover:text-black text-white cursor-pointer">
+          </Link>
+          <Link
+            href="/login"
+            className="w-[100px] text-center bg-green-700 py-2 px-6 rounded-md hover:bg-transparent hover:text-black text-white cursor-pointer"
+          >
             Masuk
-          </button>
+          </Link>
         </div>
       </ul>
     </div>
