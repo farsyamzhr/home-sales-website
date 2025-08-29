@@ -24,13 +24,13 @@ function Navbar() {
       <img
         src="/assets/menu-bar.svg"
         alt=""
-        className="md:hidden cursor-pointer"
+        className="lg:hidden cursor-pointer border border-green-600 p-3 rounded-md hover:bg-green-100"
         onClick={menuBarClick}
       />
 
       {/* Navbar Items */}
       <ul
-        className={`shadow md:shadow-none fixed md:static md:top-0 top-18 ${menuActive} md:items-center w-[200px] md:w-auto h-[calc(100vh-64px)] md:h-auto bg-green-50 md:bg-transparent flex flex-col md:flex-row gap-6 p-6 md:p-0 transition-all duration-300 z-40`}
+        className={`shadow lg:shadow-none fixed lg:static lg:top-0 top-18 ${menuActive} lg:items-center w-[200px] lg:w-auto h-[calc(100vh-64px)] lg:h-auto bg-green-50 lg:bg-transparent flex flex-col lg:flex-row gap-6 p-6 lg:p-0 transition-all duration-300 z-40`}
       >
         <li>
           <a href="#" className="hover:text-green-700">
@@ -38,13 +38,18 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#" className="hover:text-green-700">
-            Layanan
+          <a href="#aboutUs" className="hover:text-green-700">
+            Tentang kami
           </a>
         </li>
         <li>
           <a href="#" className="hover:text-green-700">
-            Fitur
+            Tipe Unit
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-green-700">
+            Fasilitas
           </a>
         </li>
         <li>

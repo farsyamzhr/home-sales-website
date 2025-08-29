@@ -1,12 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import AboutUs from "@/components/AboutUs";
+import UnitType from "@/components/UnitType";
 import Footer from "@/components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
    <div>
     <Navbar />
     <Hero />
+    <AboutUs />
+    <UnitType />
     {/* <Footer /> */}
    </div>
   );
