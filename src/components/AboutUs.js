@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <div id="aboutUs" className="wrapper min-h-screen flex flex-col bg-gradient-to-b from-green-50 to-gray-300 py-7 md:py-20 px-5 lg:px-20 gap-10">
+    <div id="aboutUs" className="wrapper min-h-screen flex flex-col bg-gradient-to-b from-green-50 to-gray-400 py-7 md:py-20 px-5 lg:px-20 gap-10">
         <div className="box-about flex flex-col gap-4 md:gap-8">
             <div className="title text-center font-bold text-green-700 text-lg md:text-3xl">Tentang Kami</div>
             <div className="text-sm md:text-lg text-center">

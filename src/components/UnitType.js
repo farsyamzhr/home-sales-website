@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function UnitType() {
   return (
-    <div className="wrapper min-h-screen flex flex-col py-7 md:py-20 px-5 lg:px-20 items-center bg-gradient-to-b from-gray-300 to-green-50">
+    <div className="wrapper min-h-screen flex flex-col py-7 md:py-20 px-5 lg:px-20 items-center bg-gradient-to-b from-gray-400 to-green-50">
       <div className="box-title flex flex-col gap-1 items-center">
         <div className="title font-bold text-green-700 text-lg md:text-3xl">
           Rekomendasi
