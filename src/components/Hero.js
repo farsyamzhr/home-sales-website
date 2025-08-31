@@ -9,7 +9,7 @@ function Hero() {
             <img src="/assets/arrow-right.svg" alt="" />
         </button>
       </div>
-      <img src="/assets/house-3D.svg" alt="" className="translate-x-5 top-2 lg:translate-x-10"/>
+      <img src="/assets/house-3D.svg" alt="" className="translate-x-12 top-3 lg:translate-x-14"/>
     </div>
   )
 }

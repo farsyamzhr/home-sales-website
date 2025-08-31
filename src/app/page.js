@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import AboutUs from "@/components/AboutUs";
 import UnitType from "@/components/UnitType";
 import Service from "@/components/Service";
+import Mailbox from "@/components/Mailbox";
 import Footer from "@/components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +15,8 @@ export default function Home() {
     <AboutUs />
     <UnitType />
     <Service />
-    {/* <Footer /> */}
+    <Mailbox />
+    <Footer />
    </div>
   );
 }

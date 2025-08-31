@@ -16,13 +16,11 @@ function Navbar() {
 
   return (
     <div className="bg-green-50 py-4 md:px-6 px-3 flex justify-between items-center shadow transition-all sticky top-0 z-50">
-      {/* Logo */}
       <div className="box-logo flex gap-2 items-center cursor-pointer">
         <Image src="/assets/logo.svg" alt="" width={40} height={40}/>
-        <h1 className="font-bold mb-0">GriyaGo</h1>
+        <h1 className="!text-base font-bold mb-0">GriyaGo</h1>
       </div>
 
-      {/* Menu Bar Icon */}
       <Image
         src="/assets/menu-bar.svg"
         alt=""
@@ -32,9 +30,8 @@ function Navbar() {
         onClick={menuBarClick}
       />
 
-      {/* Navbar Items */}
       <ul
-        className={`shadow lg:!shadow-none fixed lg:static lg:top-0 top-20 ${menuActive} lg:items-center w-[200px] lg:w-auto h-[calc(100vh-64px)] lg:h-auto bg-green-50 lg:bg-transparent flex flex-col lg:flex-row gap-6 p-6 lg:p-0 transition-all duration-300 z-40`}
+        className={`shadow lg:!shadow-none fixed lg:static lg:top-0 top-20 ${menuActive} lg:items-center w-[200px] lg:w-auto h-[calc(100vh-64px)] lg:h-auto bg-green-50 lg:bg-transparent flex flex-col lg:flex-row gap-6 p-6 lg:p-0 transition-all duration-300 z-40 m-0`}
       >
         <li>
           <a href="#" className="hover:!text-green-700 !text-black !no-underline">
