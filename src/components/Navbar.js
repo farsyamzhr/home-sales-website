@@ -66,7 +66,7 @@ function Navbar() {
             Daftar
           </Link>
           <Link
-            href="/SignIn"
+            href="/signIn"
             className="w-[100px] text-center bg-green-700 py-2 px-6 rounded-md hover:!bg-transparent hover:!text-black !text-white hover:!border hover:!border-green-700 cursor-pointer !no-underline"
           >
             Masuk
