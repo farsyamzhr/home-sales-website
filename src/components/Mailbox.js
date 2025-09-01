@@ -26,12 +26,12 @@ function Mailbox() {
   ];
 
   return (
-    <div className="py-10 px-5 lg:px-20 bg-gradient-to-b from-gray-100 to-green-50">
+    <div id="mailbox" className="py-10 px-5 lg:px-20 bg-gradient-to-b from-gray-100 to-green-50">
       <Container>
         <Row className="mb-5 text-center">
-          <Col>
+          <Col className="flex flex-col gap-2">
             <motion.h2
-              className="fw-bold text-success"
+              className="fw-bold text-success mb-0 !text-lg md:!text-2xl"
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -39,7 +39,7 @@ function Mailbox() {
               Kotak Pesan 📬
             </motion.h2>
             <motion.p
-              className="text-muted"
+              className="text-muted mb-0"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -59,14 +59,14 @@ function Mailbox() {
               >
                 <Card className="shadow-sm border-0 h-100">
                   <Card.Body>
-                    <Card.Title className="fw-bold text-success">
+                    <Card.Title className="fw-bold text-success !text-base">
                       {msg.subject}
                     </Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
+                    <Card.Subtitle className="mb-2 text-muted !text-sm">
                       Dari: {msg.sender} • {msg.time}
                     </Card.Subtitle>
-                    <Card.Text>{msg.preview}</Card.Text>
-                    <Button variant="success" size="sm">
+                    <Card.Text className="!text-sm">{msg.preview}</Card.Text>
+                    <Button variant="success" size="sm" className="!text-sm">
                       Baca Selengkapnya
                     </Button>
                   </Card.Body>

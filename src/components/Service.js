@@ -32,18 +32,18 @@ function Service() {
   ];
 
   return (
-    <div className="wrapper min-h-screen flex flex-col gap-10 py-7 md:py-20 px-5 lg:px-20 bg-gradient-to-b from-green-50 to-gray-400">
+    <div id="service" className="wrapper flex flex-col gap-10 py-7 md:py-20 px-5 lg:px-20 bg-gradient-to-b from-green-50 to-gray-400">
       <div className="box-title flex flex-col gap-1 items-center">
         <motion.div
-          className="title font-bold text-green-700 text-lg md:text-3xl"
+          className="title font-bold text-green-700 !text-lg md:!text-2xl"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Layanan Kami
+          Fasilitas
         </motion.div>
         <motion.div
-          className="sub-title font-bold text-sm/5 text-center text-gray-700"
+          className="sub-title text-base text-center text-gray-700"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -67,10 +67,10 @@ function Service() {
               <CardImg src={service.image} alt={service.title} />
               <div className="absolute inset-0 bg-black/50"></div>
               <CardImgOverlay className="flex flex-col justify-center relative z-10">
-                <CardTitle className="text-2xl font-bold text-center mb-2">
+                <CardTitle className="text-xs lg:text-2xl font-bold text-center mb-2">
                   {service.title}
                 </CardTitle>
-                <CardText className="text-base text-center">
+                <CardText className="text-xs lg:text-base text-center">
                   {service.text}
                 </CardText>
               </CardImgOverlay>
